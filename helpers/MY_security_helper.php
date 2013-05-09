@@ -28,7 +28,7 @@ if ( ! function_exists('csrf_site_url'))
 		$CI->load->helper('url');
 		
 		// Make URI relative: trim base url
-		$uri = str_replace( site_url(), '', $uri );
+		if ( $uri != '' ) $uri = str_replace( site_url(), '', $uri );
 		
 		$csrf_name 	= config_item('csrf_token_name');
 		$csrf_value	= $CI->security->get_csrf_hash();
