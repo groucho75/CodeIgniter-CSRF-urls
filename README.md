@@ -27,13 +27,8 @@ To make it less vulnerable to attack this helper appends CSRF variables to url. 
 
 ## Helper funcions
 You have 2 functions:
-* You can select your preferred JqueryUi theme customizing the line: `wp_enqueue_style('jquery-ui-theeme', ... )`
-* You can let modal open also when browser has to be updated commenting the line: `if ( $response && empty($response['insecure'] ) ) return;`
-
-
-## Note
-* You can select your preferred JqueryUi theme customizing the line: `wp_enqueue_style('jquery-ui-theeme', ... )`
-* You can let modal open also when browser has to be updated commenting the line: `if ( $response && empty($response['insecure'] ) ) return;`
+### csrf_site_url ###
+### check_csrf_url ###
 
 
 
