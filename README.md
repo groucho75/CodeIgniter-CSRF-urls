@@ -6,8 +6,7 @@ I tested it with CodeIgniter 2.0 and 2.1.3.
 
 
 ## Concept
-
-CSRF is an attack which forces an end user to execute unwanted actions on a web application in which he/she is currently authenticated.
+[CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29) is an attack which forces an end user to execute unwanted actions on a web application in which he/she is currently authenticated.
 CI gives you a default protection when submitting forms.
 This helper helps you to protect the links of yhe site from attacks.
 
@@ -18,8 +17,6 @@ In an admin area of your site you can have a button that deletes an item. The ur
 To make it less vulnerable to attack this helper appends CSRF variables to url. So it becomes:
 
 `/index.php/admin/delete/item/1/your_csrf_token_name/your_csrf_token_value`
-
-More info on [OWASP site](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29).
 
 
 ## Installation
