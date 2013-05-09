@@ -12,8 +12,11 @@ CI gives you a default protection when submitting forms.
 This helper helps you to protect the links of yhe site from attacks.
 
 In an admin area of your site you can have a button that deletes an item. The url can be like:
+
 `/index.php/admin/delete/item/1`
+
 To make it less vulnerable to attack this helper appends CSRF variables to url. So it becomes:
+
 `/index.php/admin/delete/item/1/your_csrf_token_name/your_csrf_token_value`
 
 More info on [OWASP site](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29).
