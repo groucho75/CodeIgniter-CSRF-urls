@@ -14,7 +14,7 @@ In the admin area of your site you could have a button that deletes an item. The
 
 `/index.php/admin/delete/item/1`
 
-To make it less vulnerable to attack this helper appends CSRF variables to url. So it becomes:
+To make it less vulnerable to attacks this helper appends CSRF variables to url. So it becomes:
 
 `/index.php/admin/delete/item/1/your_csrf_token_name/your_csrf_token_value`
 
