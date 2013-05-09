@@ -13,7 +13,6 @@
 	
 	<?php if ( isset($sample_link) ) echo anchor( $sample_link, 'click here' ); ?>
 	
-
 </div>
 
 </body>
