@@ -39,5 +39,4 @@ class Csrf_test extends CI_Controller {
 	
 }
 
-
 /* EOF */
