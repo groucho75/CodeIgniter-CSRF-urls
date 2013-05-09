@@ -27,8 +27,11 @@ To make it less vulnerable to attack this helper appends CSRF variables to url. 
 
 ## Helper functions
 You have 2 functions:
-#### csrf_site_url ####
-#### check_csrf_url ####
+
+#### csrf_site_url ( *uri* ) ####
+* append CSRF token name and value to the *uri* and return it
+
+#### check_csrf_url ()####
 
 
 
