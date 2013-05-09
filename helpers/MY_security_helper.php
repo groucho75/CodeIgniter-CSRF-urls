@@ -8,7 +8,6 @@
  * @category 	Security
  */
 
-
 /**
  * Append CSRF token to URL
  *
