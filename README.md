@@ -25,7 +25,7 @@ To make it less vulnerable to attack this helper appends CSRF variables to url. 
 3. Visit the test controller `/index.php/csrf_test/` and try the sample.
 
 
-## Helper funcions
+## Helper functions
 You have 2 functions:
 #### csrf_site_url ####
 #### check_csrf_url ####
