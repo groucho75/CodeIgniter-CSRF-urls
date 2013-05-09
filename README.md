@@ -36,7 +36,7 @@ You have 2 functions:
 * append CSRF token name and value to the *uri* and return it (it uses *site_url()* )
 
 #### check_csrf_url ()####
-* put this function in a controller method to check the CSRF variables appended in url against the values stored in a cookie: if the check fails an error is shown
+* put this function in a controller method to check the CSRF variables appended in url against the values stored in cookie: if the check fails an error is shown
 
 You can view the *csrf_test* controller code to see the sample.
 
