@@ -8,7 +8,8 @@ I tested it with CodeIgniter 2.0 and 2.1.3.
 ## Concept
 [CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29) is an attack which forces an end user to execute unwanted actions on a web application in which he/she is currently authenticated.
 CI gives you a default protection when submitting forms.
-This helper helps you to protect the links of yhe site from attacks.
+
+This helper lets you protect desired links of your site from attacks.
 
 In the admin area of your site you could have a button that deletes an item. The url can be like:
 
