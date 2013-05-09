@@ -10,7 +10,7 @@ I tested it with CodeIgniter 2.0 and 2.1.3.
 CI gives you a default protection when submitting forms.
 This helper helps you to protect the links of yhe site from attacks.
 
-In an admin area of your site you can have a button that deletes an item. The url can be like:
+In the admin area of your site you could have a button that deletes an item. The url can be like:
 
 `/index.php/admin/delete/item/1`
 
