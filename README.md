@@ -26,6 +26,10 @@ To make it less vulnerable to attack this helper appends CSRF variables to url. 
 
 
 ## Helper functions
+To use the functions you have to load the Security helper:
+
+`$this->load->helper('security');`
+
 You have 2 functions:
 
 #### csrf_site_url ( *uri* ) ####
