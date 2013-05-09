@@ -27,8 +27,8 @@ To make it less vulnerable to attack this helper appends CSRF variables to url. 
 
 ## Helper funcions
 You have 2 functions:
-### csrf_site_url ###
-### check_csrf_url ###
+#### csrf_site_url ####
+#### check_csrf_url ####
 
 
 
