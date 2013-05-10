@@ -31,6 +31,18 @@ class Csrf_test extends CI_Controller {
 		// If the check returns false, the app dies and shows the alert
 		check_csrf_url();
 		
+		/*
+		// If you prefer, you can make other than show default error (e.g. show another view or redirect)
+		if ( check_csrf_url( '', false) )
+		{
+			// success
+		}
+		else
+		{
+			// failed
+		}	  
+		*/
+		
 		$data['text'] = '<strong>You passed the csrf validation!</strong><br /><br />The next link is WRONG: just to make you see the CSRF ERROR:';
 		
 		$data['sample_link'] = site_url( 'csrf_test/result/wrong_token_name.../wrong_cookie_name...' );
