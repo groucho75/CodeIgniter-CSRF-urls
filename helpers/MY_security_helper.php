@@ -55,11 +55,12 @@ if ( ! function_exists('csrf_site_url'))
  *
  * @access	public
  * @param	string	the url to check, or current URI if empty
+ * @param	bol		show default error page
  * @return	bol
  */
 if ( ! function_exists('check_csrf_url'))
 {
-	function check_csrf_url( $uri='' )
+	function check_csrf_url( $uri='', $show_error_page=true )
 	{	
 		$CI =& get_instance();
 		
@@ -87,7 +88,14 @@ if ( ! function_exists('check_csrf_url'))
 		// Less than 2 segments? Error
 		if ( $segments < 2 )
 		{
-			$CI->security->csrf_show_error();
+			if ( $show_error_page )
+			{
+				$CI->security->csrf_show_error();
+			}
+			else
+			{
+				return FALSE;
+			}
 		}
 		
 		// Get appended CSRF
@@ -114,13 +122,27 @@ if ( ! function_exists('check_csrf_url'))
 		// The cookie is empty: false
 		if ( ! isset($_COOKIE[$csrf_cookie_name]))
 		{
-			$CI->security->csrf_show_error();
+			if ( $show_error_page )
+			{
+				$CI->security->csrf_show_error();
+			}
+			else
+			{
+				return FALSE;
+			}
 		}
 
 		// Check if match
 		if ( $appended_csrf_name != $csrf_token_name || $appended_csrf_value != $_COOKIE[$csrf_cookie_name] )
 		{
-			$CI->security->csrf_show_error();
+			if ( $show_error_page )
+			{
+				$CI->security->csrf_show_error();
+			}
+			else
+			{
+				return FALSE;
+			}
 		}
 		
 		return TRUE;
